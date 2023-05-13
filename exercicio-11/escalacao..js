@@ -21,11 +21,6 @@ function addPlayer() {
     }
 
 }
-
-
-
-
-
 function removePlayer() {
     const number = document.getElementById('numberToRemove').value
     console.log(typeof number)
