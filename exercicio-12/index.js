@@ -41,9 +41,27 @@ addTechBtn.addEventListener('click', function (ev) {
     const techNameLabel = createLabel('Nome: ', 'techName-' + rowIndex)
     const techNameLInput = createInput('techName-' + rowIndex, null, 'techName', 'text', 'Digite seu nome')
 
+    //Criando Radio
+    const id = 'expRadio-' + rowIndex
+    const expLabel = createLabel('Experiência: ',id)
+    const id1 = 'expRadio-' + rowIndex + '.1'
+    const expRadiol = createInput(id1, '0-2 anos', 'techExp-' + rowIndex, 'radio')
+    const expLabel1 = createLabel('0-2 anos', id1)
+    const id2 = 'expRadio-' + rowIndex + '.2'
+    const expRadio2 = createInput(id2, '3-4 anos', 'techExp-' + rowIndex, 'radio')
+    const expLabel2 = createLabel('3-4 anos', id2)
+    const id3 = 'expRadio-' + rowIndex + '.3'
+    const expRadio3 = createInput(id3, '5+ anos', 'techExp-' + rowIndex, 'radio')
+    const expLabel3 = createLabel('5+ anos', id3)
+
+
     //Insere nós filhos de <li></li> -> <label></label> e <input> 
     newRow.append(
-        techNameLabel, techNameLInput
+        techNameLabel, techNameLInput, 
+        expLabel, expRadiol, 
+        expLabel1,expRadio2, 
+        expLabel2, expRadio3, 
+        expLabel3
     )
     //Inserindo nó de <ul></ul>
     stackInputs.appendChild(newRow)
