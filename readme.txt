@@ -1,3 +1,6 @@
+Iniciando os estudos com javascript e todos seus fundamentos este conterá de exercícios até projetos.
+
+
 Objetos Globais
 
 São objetos padrão da linguagem javascript que ficam sempre disponíveis para utilizarmos
