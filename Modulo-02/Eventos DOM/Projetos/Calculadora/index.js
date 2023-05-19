@@ -18,7 +18,7 @@ document.querySelectorAll('.charKey').forEach(function (charKeyBtn) {
     })
 })
 input.addEventListener('keydown', function (ev) {
-    //Previnido comportamento padrap
+    //Previnido comportamento padrão
     ev.preventDefault()
     if (allowedKeys.includes(ev.key)) {
         input.value += ev.key
@@ -28,12 +28,11 @@ input.addEventListener('keydown', function (ev) {
         //Excluindo caracteres com backspace
         input.value = input.value.slice(0, -1)
     }
-    //Usar o enter para efetuar as operções
+    //Usar o enter para efetuar as operações
     if (ev.key === 'Enter') {
         calculate()
     }
 })
-
 //Button de calcular
 document.getElementById('equal').addEventListener('click', calculate)
 function calculate() {
@@ -47,7 +46,7 @@ function calculate() {
     resultInput.classList.remove('error')
     console.log("Confirmado a calculadora");
 }
-//Buttun de copy
+//Button de copy
 document.getElementById('copyToClipboard').addEventListener('click', function (ev) {
     const button = ev.currentTarget
     if (button.innerText === 'Copy') {
